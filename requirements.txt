@@ -2,3 +2,4 @@ python-telegram-bot==20.8
 sqlalchemy
 aiohttp
 playwright
+--extra-index-url https://pypi.org/simple
