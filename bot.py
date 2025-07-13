@@ -1,8 +1,9 @@
 import asyncio
+import os
 from telegram.ext import ApplicationBuilder, CommandHandler, CallbackQueryHandler
 from handlers import start, handle_callback, show_cart, order
 
-TOKEN = "7609313079:AAGz1EI0JeCvXXoMChDIKn39jxTvFBbTWhA"
+TOKEN = os.environ.get("BOT_TOKEN")
 
 async def main():
     app = ApplicationBuilder().token(TOKEN).build()
